@@ -1,15 +1,79 @@
-.pic{
-    height: 500px;
-    width: 800px;
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background-color: #FDF5FB;
-}
-.header-main{
-    color: #22051C ;
+.header{
+  position: relative; /*czy to musi byc?*/
 }
 
-.section-header{
-color: #6F5060;
+.navigation {
+  background: rgba(141, 40, 81, 0.9);
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+
+  padding: 20px 0;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 2020;
+
+}
+
+.navigation__link {
+  color: green;
+  box-sizing: border-box;
+  height: 80px;
+  display: inline-block;
+
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.navigation__link--homepage {
+  color: blue;
+  font-size: large;
+}
+
+
+.main{
+  display: block;
+  overflow: hidden; /*Czy to jest potrzebne? Tak jest na stronie Maćka.*/
+  padding: 20px;
+}
+
+.main__section{
+  display:block;
+  padding-top: 80px;
+}
+
+.main__section--title{
+  font-size: 5vh;
+  color: #331832;
+}
+
+.page-section{
+  padding: 7px 0;
+}
+
+.page-section__title{
+  color: #F0544F;
+}
+
+.page-section__text{
+  color: #38405F;
+}
+
+
+.pic {
+  height: 500px;
+  width: 800px;
+}
+
+
+footer{
+  background: rgba(141, 40, 81, 0.9);
 }
