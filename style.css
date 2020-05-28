@@ -41,31 +41,40 @@ body {
 
 .main{
   display: block;
-  overflow: hidden; /*Czy to jest potrzebne? Tak jest na stronie Maćka.*/
   padding: 20px;
+
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.main__section{
+.main__header{
   display:block;
   padding-top: 80px;
 }
 
-.main__section--title{
+.main__header--title{
   font-size: 5vh;
   color: #331832;
 }
 
-.page-section{
+.page-description{
   padding: 7px 0;
 }
 
-.page-section__title{
+.page-description__title{
   color: #F0544F;
 }
 
-.page-section__text{
+.page-description__paragraph{
   color: #38405F;
 }
+
+
+.about__picture{
+max-width: 500px;
+max-height: 500px;
+}
+
 
 
 .pic {
@@ -76,4 +85,6 @@ body {
 
 footer{
   background: rgba(141, 40, 81, 0.9);
+  max-width: 1000px;
+  margin: 0 auto;
 }

@@ -8,49 +8,52 @@
   </head>
 
   <body>
-    <header class='header'>
-      <nav class='navigation'>
-        <a class='navigation__link navigation__link--homepage' href='index.html'
-          >Strona główna</a
-        >
-        <a class='navigation__link' href="HTML.html">Strona o HTML</a>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage"
+          href="index.html">Strona główna</a>
+        <a class="navigation__link" href="HTML.html">Strona o HTML</a>
         <a class="navigation__link" href="CSS.html">Strona o CSS</a>
-        <a class="navigation__link" href="JavaScript.html"
-          >Strona o JavaScript</a
-        >
+        <a class="navigation__link" href="JavaScript.html">
+          Strona o JavaScript</a>
       </nav>
     </header>
 
-    <main class='main'>
-      <section class='main__section'>
-        <h1 class='main__section--title'>Kinga Wolko - strona domowa</h1>
-      </section>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__header--title">Kinga Wolko - strona domowa</h1>
+      </header>
 
-      <section class='page-section'>
-        <h2 class='page-section__title'>Nauka programowania</h2>
-        <p class='page-section__text'>
-          Strona poświęcona moim postępom nauki pogramowania od podstaw - czyli moja
-          przygoda ze szkoleniem Maćka Korsana WTF: Co ten Frontend. O samym
-          szkoleniu możesz poczytać
-          <a href="https://cotenfrontend.pl/">tutaj </a>(link odsyła
-          do strony WTF).
+      <section class="page-description">
+        <h2 class="page-description__title">Nauka programowania</h2>
+        <p class="page-description__paragraph">
+          Strona poświęcona moim postępom nauki pogramowania od podstaw - czyli
+          moja przygoda ze szkoleniem Maćka Korsana WTF: Co ten Frontend. O
+          samym szkoleniu możesz poczytać
+          <a href="https://cotenfrontend.pl/">tutaj </a>(link odsyła do strony
+          WTF).
         </p>
+        <p
+          class="page-description__paragraph page-description__paragraph--js"
+        ></p>
       </section>
 
-      <section class='page-section'>
-        <h2 class='page-section__title'>Notatki z WTF: Co ten frontend</h2>
+      <section class="notes">
+        <h2 class="notes__title">Notatki z WTF: Co ten frontend</h2>
 
-        <article>
-          <h3>Czego nowego nauczyłas się o HTML?</h3>
-          <p class='page-section__text'>
+        <article class="week-summary">
+          <h3 class="week-summary__heading">
+            Czego nowego nauczyłas się o HTML?
+          </h3>
+          <p class="week-summary__description">
             O tym, że podstawy pliku index.html tworzymy poprzez naciśnięcie "!"
             i TAB. Zapisałam to sobie nawet na karteczce :)
           </p>
         </article>
 
-        <article>
-          <h3>Walidator</h3>
-          <p class='page-section__text'>
+        <article class="week-summary">
+          <h3 class="week-summary__heading">Walidator</h3>
+          <p class="week-summary__description">
             Dostępny pod
             <a href="https://validator.w3.org/nu/#textarea">tym</a> linkiem.
             Bardzo ciekawe narzędzie służące do sprawdzenia naszego kodu.
@@ -59,10 +62,12 @@
           </p>
         </article>
 
-        <article>
-          <h3>GIT</h3>
-          <p class='page-section__text'>Do konsoli logujemy się tylko raz przy użyciu komend:</p>
-          <ul>
+        <article class="week-summary">
+          <h3 class="week-summary__heading">GIT</h3>
+          <p class="week-summary__description">
+            Do konsoli logujemy się tylko raz przy użyciu komend:
+          </p>
+          <ul class="week-summary__list">
             <li>
               <strong>git config --global user.name"Imię i Nazwisko"</strong>-
               ze względu na spację między imienim i nazwiskiem wpisujemy nasze
@@ -73,7 +78,7 @@
               email nie może posiadać spacji więc nie wpisujemy go w nawiasy
             </li>
           </ul>
-          <p>      
+          <p class="week-summary__description">
             Następnie upewniamy się w konsoli, że jesteśmy w folderze z naszym
             projektem.
           </p>
@@ -81,13 +86,13 @@
       </section>
     </main>
 
-    <aside class='side-section'>
-          <section>
+    <aside class="about">
+      <section>
         <header>
-          <h2 class='side-section__header'>Kim jestem? - ostylować później</h2>
+          <h2 class="about__header">Kim jestem? - ostylować później</h2>
         </header>
-        <img class="pic" src="girl1.jpg" alt="me" />
-        <p class='side-section__text'>
+        <img class="about__picture" src="girl1.jpg" alt="me" />
+        <p class="about__description">
           Jestem osobą, która po raz 3 podchodzi do nauki porgmowania. Za 1
           razem przeszkoda okazała się nowa praca i zmęczenie od przeładowania
           informacjami. 2 podejście to pójście na studia. Tu błędem okazał się
@@ -99,6 +104,10 @@
       </section>
     </aside>
 
-    <footer>Ta strona została stworzona przez Kingę Wolko</footer>
+    <footer class="footer">
+      Ta strona została stworzona przez Kingę Wolko
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
